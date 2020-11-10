@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -17,9 +18,9 @@ import kotlinx.android.synthetic.main.fragment_restaurante.view.*
 import java.util.ArrayList
 
 
-class RestauranteFragment : Fragment() {
+class RestauranteFragment : Fragment(), PratosAdapter.OnClickPratosListener {
     private val listaDePratos = getPratos(9)
-    private val adapter: PratosAdapter = PratosAdapter(listaDePratos)
+    private val adapter: PratosAdapter = PratosAdapter(listaDePratos, this)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -62,6 +63,14 @@ class RestauranteFragment : Fragment() {
 
 
         return lista
+    }
+
+    override fun OnClickPratos(position: Int) {
+        val pratos = listaDePratos.get(position)
+        adapter.notifyItemChanged(position)
+
+
+        findNavController().navigate(R.id.action_restauranteFragment_to_detailFragment)
     }
 
 }

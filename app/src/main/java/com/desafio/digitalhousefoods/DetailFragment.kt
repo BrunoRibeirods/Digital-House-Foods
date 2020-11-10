@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.navigation.fragment.findNavController
+import kotlinx.android.synthetic.main.fragment_detail.view.*
 
 
 class DetailFragment : Fragment() {
@@ -15,6 +17,9 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view: View = inflater.inflate(R.layout.fragment_detail, container, false)
+        view.btn_voltar_prato.setOnClickListener {
+            findNavController().navigate(R.id.action_detailFragment_to_restauranteFragment)
+        }
 
         return view
     }
