@@ -19,7 +19,7 @@
             app:boxBackgroundColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Name">
+            android:hint="@string/name">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tf_name_register"
@@ -37,7 +37,7 @@
             app:boxBackgroundColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email">
+            android:hint="@string/email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tf_email_register"
@@ -55,7 +55,7 @@
             app:boxBackgroundColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password">
+            android:hint="@string/password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tf_password_register"
@@ -73,7 +73,7 @@
             app:boxBackgroundColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Repeat password">
+            android:hint="@string/repeat_password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tf_password_confirm"
@@ -98,7 +98,7 @@
                 android:id="@+id/btn_register_account"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:text="Register"
+                android:text="@string/register"
                 android:backgroundTint="@color/login_color"
                 />
 

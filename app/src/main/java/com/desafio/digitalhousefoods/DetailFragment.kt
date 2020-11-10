@@ -5,11 +5,15 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.addCallback
+import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import kotlinx.android.synthetic.main.fragment_detail.view.*
+import kotlinx.android.synthetic.main.fragment_restaurante.view.*
 
 
-class DetailFragment : Fragment() {
+class DetailFragment : Fragment(){
+
 
 
     override fun onCreateView(
@@ -17,9 +21,12 @@ class DetailFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         val view: View = inflater.inflate(R.layout.fragment_detail, container, false)
+
         view.btn_voltar_prato.setOnClickListener {
-            findNavController().navigate(R.id.action_detailFragment_to_restauranteFragment)
+           findNavController().navigate(R.id.action_detailFragment_to_restauranteFragment)
         }
+
+
 
         return view
     }

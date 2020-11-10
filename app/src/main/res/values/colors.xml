@@ -11,4 +11,5 @@
     <color name="white">#FFFFFFFF</color>
     <color name="login_color">#ff5252</color>
     <color name="register_color">#8492a6</color>
+    <color name="register_color_density">#697684</color>
 </resources>

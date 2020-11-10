@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.activity.addCallback
 import androidx.core.os.bundleOf
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
@@ -22,6 +23,8 @@ class RestauranteFragment : Fragment(), PratosAdapter.OnClickPratosListener {
     private val listaDePratos = getPratos(9)
     private val adapter: PratosAdapter = PratosAdapter(listaDePratos, this)
 
+
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -34,6 +37,9 @@ class RestauranteFragment : Fragment(), PratosAdapter.OnClickPratosListener {
         arguments?.getString("nome")?.let {
             view.tv_nome_restaurante_card.text = it
         }
+
+
+
 
 
         val recy = view.findViewById<RecyclerView>(R.id.rvPratos)

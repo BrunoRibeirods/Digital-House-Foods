@@ -17,7 +17,7 @@
             app:boxBackgroundColor="@color/white"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Email">
+            android:hint="@string/email">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tf_email"
@@ -36,7 +36,7 @@
             android:layout_marginTop="20dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="Password">
+            android:hint="@string/password">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tf_password"
@@ -61,14 +61,14 @@
                 android:id="@+id/btn_login"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:text="Log In"
+                android:text="@string/log_in"
                 android:backgroundTint="@color/login_color"
                 />
 
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:text="Or"
+                android:text="@string/or"
                 android:gravity="center"/>
 
             <Button
@@ -76,7 +76,7 @@
                 android:layout_marginTop="20dp"
                 android:layout_width="match_parent"
                 android:layout_height="70dp"
-                android:text="Register"
+                android:text="@string/register"
                 android:backgroundTint="@color/register_color"
                 />
 

@@ -43,7 +43,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginBottom="16dp"
-                android:text="Salada com molho Gengibre"
+                android:text="@string/tv_salada"
                 android:textColor="@color/white"
                 android:textSize="24sp"
                 android:textStyle="bold"
@@ -60,9 +60,8 @@
             android:layout_margin="4dp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/register_color"
-            android:textStyle="bold"
-            android:textSize="16sp"
+            android:textColor="@color/register_color_density"
+            android:textSize="20sp"
             android:text="@string/lorem_ipsum"/>
 
 

@@ -24,7 +24,7 @@
                 android:layout_height="100dp"
                 android:scaleType="centerCrop"
                 android:src="@drawable/image1"
-                android:contentDescription="RestaurantePic" />
+                android:contentDescription="@string/restaurantepic" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -37,10 +37,10 @@
                     android:id="@+id/tv_nome_prato"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Restaurante"
+                    android:text="@string/restaurante"
                     android:gravity="center"
                     android:textSize="18dp"
-                    android:textColor="@color/register_color"
+                    android:textColor="@color/register_color_density"
                     android:textStyle="bold"
                     />
 
