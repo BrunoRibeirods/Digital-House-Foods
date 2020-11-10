@@ -21,6 +21,7 @@
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/tf_email"
+                android:textSize="18sp"
                 android:layout_width="match_parent"
                 android:textColor="@color/primary"
                 android:layout_height="wrap_content"
@@ -41,6 +42,7 @@
                 android:id="@+id/tf_password"
                 android:layout_width="match_parent"
                 android:textColor="@color/primary"
+                android:textSize="18sp"
                 android:layout_height="wrap_content"
                 android:inputType="textPassword"
                 />
